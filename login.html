@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKNEST - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493321;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .login-section {
+            width: 420px;
+            max-width: 90%;
+            background-color: white;
+            margin: 60px auto;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+        }
+
+        h1 {
+            text-align: center;
+            color: #754C2B;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #765C43;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #C9B49D;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .remember {
+            margin-bottom: 20px;
+        }
+
+        .remember label {
+            display: inline;
+            font-weight: normal;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 13px;
+            background-color: #754C2B;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #493321;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 22px;
+            line-height: 2;
+        }
+
+        .links a {
+            color: #754C2B;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BOOKNEST.</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="books.html">Books</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">
+            Login to explore your favourite books.
+        </p>
+        <form>
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+
+            <div class="remember">
+                <input type="checkbox" name="remember">
+                <label>Remember Me</label>
+            </div>
+
+            <input type="button" value="Login"
+            onclick="alert('Login Successful'); window.location.href='home.html'">
+        </form>
+
+        <div class="links">
+            <p>Don't have an account?
+                <a href="signup.html">Create Account</a>
+                <a href="index.html">Back to Home</a>
+            </p>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+        <p>Your Story Begins Here.</p>
+    </footer>
+
+</body>
+</html>

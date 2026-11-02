@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cartoon Books - BOOKNEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: #754C2B;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #754C2B;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .heading h2 {
+            color: #754C2B;
+            font-size: 32px;
+        }
+
+        .books {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px 30px 50px;
+        }
+
+        .book {
+            background-color: white;
+            width: 100%;
+            max-width: 230px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #d5c6b5;
+        }
+
+        .book img {
+            width: 100%;
+            max-width: 150px;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .book h3 {
+            color: #754C2B;
+        }
+
+        .book p {
+            color: #765C43;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        .book a {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        .book a:hover {
+            background-color: #B17A4A;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BOOKNEST.</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="home.html">Dashboard</a>
+        <a href="books.html">Books</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">login</a>
+    </nav>
+</header>
+
+<div class="heading">
+    <h2>Cartoon Books</h2>
+    <p>Explore fun and exciting stories of your favourite cartoon characters.</p>
+</div>
+
+<div class="books">
+
+    <div class="book">
+        <img src="doraemon.jpg" alt="Doraemon">
+        <h3>Doraemon</h3>
+        <p>Author: Fujiko F. Fujio</p>
+        <p class="price">Price: ₹199</p>
+        <a href="details.html">View Details</a>
+    </div>
+
+    <div class="book">
+        <img src="shinchan.jpg" alt="Shinchan">
+        <h3>Shinchan</h3>
+        <p>Author: Yoshito Usui</p>
+        <p class="price">Price: ₹180</p>
+        <a href="details.html">View Details</a>
+    </div>
+
+    <div class="book">
+        <img src="chhota_bheem.jpg" alt="Chhota Bheem">
+        <h3>Chhota Bheem</h3>
+        <p>Author: Rajiv Chilaka</p>
+        <p class="price">Price: ₹150</p>
+        <a href="details.html">View Details</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+    <p>Your Story Begins Here.</p>
+</footer>
+
+</body>
+</html>

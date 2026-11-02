@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKNEST - Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493321;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .signup-container {
+            width: 90%;
+            max-width: 420px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #D5C6B5;
+        }
+
+        .signup-container h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #754C2B;
+        }
+
+        .signup-container p {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #765C43;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #C9B8A5;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid #754C2B;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 13px;
+            background-color: #754C2B;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #493321;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-link a {
+            color: #754C2B;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .home-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #754C2B;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BOOKNEST.</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="books.html">Books</a>
+        </nav>
+    </header>
+
+    <div class="signup-container">
+      <h1>Create Account</h1>
+        <p>Join BOOKNEST and explore your reading world!</p>
+
+        <form action="welcome.html" method="get">
+            <label>Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Create password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm" placeholder="Confirm your password" required>
+
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account?</p>
+        </div>
+
+        <a href="index.html" class="home-btn"> ← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+        <p>Your Story Begins Here.</p>
+    </footer>
+
+</body>
+</html>

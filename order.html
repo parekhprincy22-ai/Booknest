@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Books - BOOKNEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: #754C2B;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #754C2B;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .heading h2 {
+            color: #754C2B;
+            font-size: 30px;
+        }
+
+        .order-form {
+            background-color: white;
+            max-width: 480px;
+            width: 90%;
+            margin: 10px auto 50px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #d5c6b5;
+        }
+
+        .order-form label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #cbb9a5;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            height: 85px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 13px;
+            background-color: #754C2B;
+            color: white;
+            border: none;
+            border-radius: 22px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #B17A4A;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BOOKNEST.</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="home.html">Dashboard</a>
+        <a href="books.html">Books</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="heading">
+    <h2>Order Your Favourite Books</h2>
+    <p>Fill in your details to place an order.</p>
+</div>
+
+<div class="order-form">
+    <form action="ordersuccess.html" method="get">
+        <label>Customer Name</label>
+        <input type="text" name="customer" placeholder="Enter Your Name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter Your Email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter Your Phone Number" required>
+
+        <label>How Many Books Do You Want?</label>
+        <select name="quantity" required>
+            <option value="">-- Select Quantity --</option>
+            <option value="1">1 Book</option>
+            <option value="2">2 Books</option>
+            <option value="3">3 Books</option>
+            <option value="4">4 Books</option>
+            <option value="5">5 Books</option>
+        </select>
+
+        <label>Delivery Address</label>
+        <textarea name="address" placeholder="Enter Your Full Address" required></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+    <p>Your Story Begins Here.</p>
+</footer>
+
+</body>
+</html>

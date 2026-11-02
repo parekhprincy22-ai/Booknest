@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKNEST - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493321;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 65px 8%;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 55%;
+            min-width: 280px;
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            color: #754C2B;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #765C43;
+            margin-bottom: 25px;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .hero-content a:hover {
+            background-color: #493321;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 40%;
+            min-width: 250px;
+            flex: 1;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #754C2B;
+            font-size: 30px;
+            margin: 35px 0;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px 7% 50px;
+        }
+
+        .category-card {
+            background-color: white;
+            width: 100%;
+            max-width: 210px;
+            padding: 30px 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .category-card h3 {
+            color: #754C2B;
+            margin-bottom: 15px;
+        }
+
+        .category-card a {
+            color: #B17A4A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .featured {
+            padding: 20px 7% 60px;
+        }
+
+        .book-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .book-card {
+            background-color: white;
+            width: 100%;
+            max-width: 220px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .book-card h3 {
+            color: #754C2B;
+            margin: 12px 0;
+        }
+
+        .book-card p {
+            color: #765C43;
+            margin-bottom: 12px;
+        }
+
+        .book-card a {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            padding: 9px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .view-all a {
+            background-color: #754C2B;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BOOKNEST.</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="home.html">Dashboard</a>
+            <a href="books.html">Books</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to BOOKNEST!</h1>
+            <p>
+                Discover a world of stories, knowledge and imagination.
+                Find your favourite books and enjoy reading every day.
+                Your next great read is waiting for you!
+            </p>
+            <a href="books.html">Explore Books</a>
+        </div>
+        <div class="hero-image">
+            <img src="book.jpg" alt="Book Collection">
+        </div>
+    </section>
+
+    <h2 class="section-title">Explore Categories</h2>
+
+    <section class="categories">
+        <div class="category-card">
+            <h3>Fiction</h3>
+            <a href="fiction.html">Explore Now</a>
+        </div>
+        <div class="category-card">
+            <h3>cartoon</h3>
+            <a href="cartoon.html">Explore Now</a>
+        </div>
+        <div class="category-card">
+            <h3>Mystery</h3>
+            <a href="mystery.html">Explore Now</a>
+        </div>
+        <div class="category-card">
+            <h3>Self Help</h3>
+            <a href="selfhelp.html">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2 class="section-title">Featured Books</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="book1.jpg" alt="Book">
+                <h3>Fiction Collection</h3>
+                <p>Explore amazing fictional stories.</p>
+                <a href="fiction.html">View Books</a>
+            </div>
+            <div class="book-card">
+                <img src="book2.jpg" alt="Book">
+                <h3>cartoon Collection</h3>
+                <p>Enjoy fun and colorful cartoon adventures for all ages.</p>
+                <a href="cartoon.html">View Books</a>
+            </div>
+            <div class="book-card">
+                <img src="book3.jpg" alt="Book">
+                <h3>Mystery Collection</h3>
+                <p>Enjoy exciting mystery stories.</p>
+                <a href="mystery.html">View Books</a>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="books.html">View All Books</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+        <p>Your Story Begins Here.</p>
+        <p><a href="contact.html" style="color:white;">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details - BOOKNEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: #754C2B;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #754C2B;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .heading h2 {
+            color: #754C2B;
+            font-size: 30px;
+        }
+
+        .details {
+            background-color: white;
+            max-width: 750px;
+            width: 90%;
+            margin: 25px auto;
+            padding: 25px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #d5c6b5;
+            flex-wrap: wrap;
+        }
+
+        .details img {
+            width: 100%;
+            max-width: 160px;
+            height: 230px;
+            object-fit: contain;
+        }
+
+        .info {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .info h3 {
+            color: #754C2B;
+            font-size: 23px;
+        }
+
+        .info p {
+            line-height: 1.6;
+            color: #765C43;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        .back {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        .back:hover {
+            background-color: #B17A4A;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BOOKNEST.</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="home.html">Dashboard</a>
+        <a href="books.html">Books</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="heading">
+    <h2>Book Details</h2>
+    <p>Explore your favourite books and discover their stories.</p>
+</div>
+
+<div class="details">
+    <img src="The Alchemist.jpg" alt="The Alchemist book cover">
+    <div class="info">
+        <h3>The Alchemist</h3>
+        <p><b>Author:</b> Paulo Coelho</p>
+        <p><b>Category:</b> Fiction</p>
+        <p>A beautiful story about following your dreams, discovering your purpose and listening to your heart.</p>
+        <p class="price">Price: ₹299</p>
+        <a class="back" href="books.html">Back to Books</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="harry_potter.jpg" alt="Harry Potter book cover">
+    <div class="info">
+        <h3>Harry Potter</h3>
+        <p><b>Author:</b> J. K. Rowling</p>
+        <p><b>Category:</b> Fiction</p>
+        <p>An exciting magical adventure filled with friendship, courage and mystery.</p>
+        <p class="price">Price: ₹399</p>
+        <a class="back" href="books.html">Back to Books</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="the_hobbit.jpg" alt="The Hobbit book cover">
+    <div class="info">
+        <h3>The Hobbit</h3>
+        <p><b>Author:</b> J. R. R. Tolkien</p>
+        <p><b>Category:</b> Fiction</p>
+        <p>A fantasy adventure about a hobbit who goes on an unforgettable journey.</p>
+        <p class="price">Price: ₹349</p>
+        <a class="back" href="books.html">Back to Books</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="doraemon.jpg" alt="Doraemon">
+    <div class="info">
+        <h3>Doraemon</h3>
+        <p><b>Author:</b> Fujiko F. Fujio</p>
+        <p><b>Category:</b> Cartoon</p>
+        <p>A fun story about a robotic cat from the future who helps Nobita with amazing gadgets and exciting adventures.</p>
+        <p class="price">Price: ₹199</p>
+        <a class="back" href="cartoon.html">Back to Cartoon</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="shinchan.jpg" alt="Shinchan">
+    <div class="info">
+        <h3>Shinchan</h3>
+        <p><b>Author:</b> Yoshito Usui</p>
+        <p><b>Category:</b> Cartoon</p>
+        <p>A funny story about Shinchan and his family, filled with comedy, mischief and entertaining moments.</p>
+        <p class="price">Price: ₹180</p>
+        <a class="back" href="cartoon.html">Back to Cartoon</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="chhota_bheem.jpg" alt="Chhota Bheem">
+    <div class="info">
+        <h3>Chhota Bheem</h3>
+        <p><b>Author:</b> Rajiv Chilaka</p>
+        <p><b>Category:</b> Cartoon</p>
+        <p>An adventurous story about Bheem and his friends, showing courage, friendship and teamwork.</p>
+        <p class="price">Price: ₹150</p>
+        <a class="back" href="cartoon.html">Back to Cartoon</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="the_silent_patient.jpg" alt="The Silent Patient book cover">
+    <div class="info">
+        <h3>The Silent Patient</h3>
+        <p><b>Author:</b> Alex Michaelides</p>
+        <p><b>Category:</b> Mystery</p>
+        <p>A psychological mystery about a woman who stops speaking and the secrets surrounding her story.</p>
+        <p class="price">Price: ₹399</p>
+        <a class="back" href="mystery.html">Back to Mystery</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="and_then_there_were_none.jpg" alt="And Then There Were None book cover">
+    <div class="info">
+        <h3>And Then There Were None</h3>
+        <p><b>Author:</b> Agatha Christie</p>
+        <p><b>Category:</b> Mystery</p>
+        <p>A classic mystery filled with suspense and unexpected twists.</p>
+        <p class="price">Price: ₹349</p>
+        <a class="back" href="mystery.html">Back to Mystery</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="tattoobook.jpg" alt="The Girl with the Dragon Tattoo book cover">
+    <div class="info">
+        <h3>The Girl with the Dragon Tattoo</h3>
+        <p><b>Author:</b> Stieg Larsson</p>
+        <p><b>Category:</b> Mystery</p>
+        <p>A gripping crime mystery involving investigation, secrets and hidden truths.</p>
+        <p class="price">Price: ₹429</p>
+        <a class="back" href="mystery.html">Back to Mystery</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="atomic_habits.jpg" alt="Atomic Habits book cover">
+    <div class="info">
+        <h3>Atomic Habits</h3>
+        <p><b>Author:</b> James Clear</p>
+        <p><b>Category:</b> Self Help</p>
+        <p>A practical book about building good habits and making small improvements every day.</p>
+        <p class="price">Price: ₹449</p>
+        <a class="back" href="selfhelp.html">Back to Self Help</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="the_power_of_new.jpg" alt="The Power of Now book cover">
+    <div class="info">
+        <h3>The Power of Now</h3>
+        <p><b>Author:</b> Eckhart Tolle</p>
+        <p><b>Category:</b> Self Help</p>
+        <p>A guide to understanding the importance of living in the present moment.</p>
+        <p class="price">Price: ₹399</p>
+        <a class="back" href="selfhelp.html">Back to Self Help</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<div class="details">
+    <img src="friends.jpg" alt="How to Win Friends and Influence People book cover">
+    <div class="info">
+        <h3>How to Win Friends and Influence People</h3>
+        <p><b>Author:</b> Dale Carnegie</p>
+        <p><b>Category:</b> Self Help</p>
+        <p>A popular guide to communication, building relationships and understanding people.</p>
+        <p class="price">Price: ₹299</p>
+        <a class="back" href="selfhelp.html">Back to Self Help</a>
+        <a class="back" href="order.html">Order Now</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+    <p>Your Story Begins Here.</p>
+</footer>
+
+</body>
+</html>

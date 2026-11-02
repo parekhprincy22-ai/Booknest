@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKNEST - All Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493321;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 45px 15px;
+            background-color: #E8D8C5;
+        }
+
+        .page-title h1 {
+            color: #754C2B;
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .page-title p {
+            color: #765C43;
+            font-size: 17px;
+        }
+
+        .category-links {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .category-links a {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin: 6px;
+        }
+
+        .category-links a:hover {
+            background-color: #493321;
+        }
+
+        .book-section {
+            padding: 30px 7% 45px;
+        }
+
+        .book-section h2 {
+            color: #754C2B;
+            font-size: 27px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #C9B49D;
+            padding-bottom: 10px;
+        }
+
+        .book-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .book-card {
+            background-color: white;
+            width: 100%;
+            max-width: 220px;
+            padding: 18px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background-color: #F5EFE5;
+            border-radius: 6px;
+        }
+
+        .book-card h3 {
+            color: #754C2B;
+            margin: 13px 0 10px;
+            font-size: 18px;
+        }
+
+        .book-card p {
+            color: #765C43;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .book-card a {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        .book-card a:hover {
+            background-color: #493321;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #D8B995;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BOOKNEST.</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="home.html">Dashboard</a>
+            <a href="books.html">Books</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Our Book Collection</h1>
+        <p>Find your favourite books and discover new stories.</p>
+    </section>
+
+    <div class="category-links">
+        <a href="fiction.html">Fiction</a>
+        <a href="cartoon.html">Cartoon</a>
+        <a href="mystery.html">Mystery</a>
+        <a href="selfhelp.html">Self Help</a>
+    </div>
+
+    <section class="book-section">
+        <h2>Fiction Books</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="The Alchemist.jpg" alt="The Alchemist book cover">
+                <h3>The Alchemist</h3>
+                <p>Author: Paulo Coelho</p>
+                <p>Price: ₹299</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="harry_potter.jpg" alt="Harry Potter book cover">
+                <h3>Harry Potter</h3>
+                <p>Author: J. K. Rowling</p>
+                <p>Price: ₹399</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="the_hobbit.jpg" alt="The Hobbit book cover">
+                <h3>The Hobbit</h3>
+                <p>Author: J. R. R. Tolkien</p>
+                <p>Price: ₹349</p>
+                <a href="details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-section">
+        <h2>Cartoon Books</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="doraemon.jpg" alt="Doraemon book cover">
+                <h3>Doraemon</h3>
+                <p>Author: Fujiko F. Fujio</p>
+                <p>Price: ₹199</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="shinchan.jpg" alt="Shinchan book cover">
+                <h3>Shinchan</h3>
+                <p>Author: Yoshito Usui</p>
+                <p>Price: ₹180</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="chhota_bheem.jpg" alt="Chhota Bheem book cover">
+                <h3>Chhota Bheem</h3>
+                <p>Author: Rajiv Chilaka</p>
+                <p>Price: ₹150</p>
+                <a href="details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-section">
+        <h2>Mystery Books</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="the_silent_patient.jpg" alt="The Silent Patient book cover">
+                <h3>The Silent Patient</h3>
+                <p>Author: Alex Michaelides</p>
+                <p>Price: ₹399</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="and_then_there_were_none.jpg" alt="And Then There Were None book cover">
+                <h3>And Then There Were None</h3>
+                <p>Author: Agatha Christie</p>
+                <p>Price: ₹299</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="tattoobook.jpg" alt="The Girl with the Dragon Tattoo book cover">
+                <h3>The Girl with the Dragon Tattoo</h3>
+                <p>Author: Stieg Larsson</p>
+                <p>Price: ₹420</p>
+                <a href="details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-section">
+        <h2>Self Help Books</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="atomic_habits.jpg" alt="Atomic Habits book cover">
+                <h3>Atomic Habits</h3>
+                <p>Author: James Clear</p>
+                <p>Price: ₹450</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="the_power_of_new.jpg" alt="The Power of Now book cover">
+                <h3>The Power of Now</h3>
+                <p>Author: Eckhart Tolle</p>
+                <p>Price: ₹350</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="friends.jpg" alt="How to Win Friends and Influence People book cover">
+                <h3>How to Win Friends</h3>
+                <p>Author: Dale Carnegie</p>
+                <p>Price: ₹299</p>
+                <a href="details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+        <p>Your Story Begins Here.</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

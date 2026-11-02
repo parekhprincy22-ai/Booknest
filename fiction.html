@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKNEST - Fiction Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE5;
+            color: #493321;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #754C2B;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493321;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #B17A4A;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 55px 15px;
+            background-color: #E8D8C5;
+        }
+
+        .page-title h1 {
+            color: #754C2B;
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .page-title p {
+            color: #765C43;
+            font-size: 17px;
+        }
+
+        .book-section {
+            padding: 45px 7% 60px;
+        }
+
+        .book-section h2 {
+            color: #754C2B;
+            font-size: 27px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #C9B49D;
+            padding-bottom: 10px;
+        }
+
+        .book-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .book-card {
+            background-color: white;
+            width: 100%;
+            max-width: 230px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 270px;
+            object-fit: contain;
+            background-color: #F5EFE5;
+            border-radius: 6px;
+        }
+
+        .book-card h3 {
+            color: #754C2B;
+            margin: 13px 0 8px;
+        }
+
+        .book-card p {
+            color: #765C43;
+            margin-bottom: 12px;
+        }
+
+        .book-card a {
+            display: inline-block;
+            background-color: #754C2B;
+            color: white;
+            padding: 9px 17px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .book-card a:hover {
+            background-color: #493321;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .back-link a {
+            color: #754C2B;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #493321;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BOOKNEST.</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="home.html">Dashboard</a>
+            <a href="books.html">Books</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Fiction Books</h1>
+        <p>Explore wonderful stories and magical adventures.</p>
+    </section>
+
+    <section class="book-section">
+        <h2>Our Fiction Collection</h2>
+        <div class="book-list">
+            <div class="book-card">
+                <img src="The Alchemist.jpg" alt="The Alchemist book cover">
+                <h3>The Alchemist</h3>
+                <p>Author: Paulo Coelho</p>
+                <p>Price: ₹299</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="harry_potter.jpg" alt="Harry Potter and the Sorcerer's Stone book cover">
+                <h3>Harry Potter</h3>
+                <p>Author: J. K. Rowling</p>
+                <p>Price: ₹399</p>
+                <a href="details.html">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="the_hobbit.jpg" alt="The Hobbit book cover">
+                <h3>The Hobbit</h3>
+                <p>Author: J. R. R. Tolkien</p>
+                <p>Price: ₹349</p>
+                <a href="details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-link">
+        <a href="books.html">← Back to All Books</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BOOKNEST. All Rights Reserved.</p>
+        <p>Your Story Begins Here.</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
